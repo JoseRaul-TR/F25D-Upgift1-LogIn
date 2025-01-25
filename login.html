@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Kundsidan – Logga in</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li style="float: left;"><a href="./index.html" target="_blank">Hem</a></li>
+                <li><a href="./about.html" target="_blank">Om oss</a></li>
+                <li><a href="./contact.html" target="_blank">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <section class="container">
+        <h1>Välkomen till kundsidan</h1>
+        <div>
+            <form class="loginform" action="/login" method="POST">
+                <table>
+                    <tr>
+                        <th colspan="2">Logga in</th>
+                    </tr>
+                    <tr>
+                        <td><label for="email" style="float:right">E-post:</label></td>
+                        <td><input type="email" id="email" name="email" style="float:left" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password" style="float:right">Lösenord:</label></td>
+                        <td><input type="password" id="password" name="password" style="float:left" required/></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" class="button" style="float:right">Logga in</button></td>
+                        <td><input type="checkbox" id="remember" name="remember"/><label for="remember">Kom ihåg mig</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" class="button">Registrera dig</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>2025 – © José Raúl Tenza <br> F25D – YH Borås</footer>
+</body>
+</html>

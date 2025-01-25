@@ -1,0 +1,97 @@
+*{
+    background-color: whitesmoke;
+    color: #5B913B;
+    margin: 0%;
+    padding: 0%;
+    border: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5B913B;
+    color: whitesmoke;
+}
+
+li{
+    float: right;
+    color: whitesmoke;
+    background-color: #5B913B;
+}
+
+li a{
+    display: block;
+    color: whitesmoke;
+    background-color: #5B913B;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.container{
+    margin: 1%;
+    padding: 2%;
+}
+
+h1{
+    text-align: center;
+    margin: 2%;
+}
+
+form{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+table, tbody, th, tr, td{
+    background-color: #5B913B;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15px;
+    margin: auto;
+    width: 30%;
+    padding: 1%;
+}
+
+label{
+    background-color: #5B913B;
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.button{
+    background-color: whitesmoke;
+    border: none;
+    color: #5B913B;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover{
+    background-color: #5B913B;
+    color: whitesmoke;
+}
+
+.button:active{
+    background-color: #5B913B;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+footer{
+    background-color: #5B913B;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
