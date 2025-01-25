@@ -1,53 +1,55 @@
-*{
-    background-color: whitesmoke;
-    color: #5B913B;
+* {
+    background-color: #D3D0A8;
+    color: #2D4659;
     margin: 0%;
     padding: 0%;
     border: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    font-family: sans-serif;
 }
-ul{
-    list-style-type:none;
+
+ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #5B913B;
-    color: whitesmoke;
+    background-color: #2D4659;
+    color: #FDFBDA;
 }
 
-li{
+li {
     float: right;
-    color: whitesmoke;
-    background-color: #5B913B;
+    color: #FDFBDA;
+    background-color: #2D4659;
+
 }
 
-li a{
-    display: block;
-    color: whitesmoke;
-    background-color: #5B913B;
-    text-align: center;
+li a {
+    display:inline-table;
+    color: #FDFBDA;
+    background-color: #2D4659;
+    text-align: right;
     padding: 14px 16px;
+    text-decoration-line: none;
 }
 
-.container{
+.container {
     margin: 1%;
     padding: 2%;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 2%;
 }
 
-form{
+form {
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-table, tbody, th, tr, td{
-    background-color: #5B913B;
-    color: whitesmoke;
+table, tbody, th, tr, td {
+    background-color: #819F7F;
+    color: #FDFBDA;
     text-align: center;
     font-size: 15px;
     margin: auto;
@@ -55,16 +57,21 @@ table, tbody, th, tr, td{
     padding: 1%;
 }
 
-label{
-    background-color: #5B913B;
-    color: whitesmoke;
+label {
+    background-color: #819F7F;
+    color: #FDFBDA;
     font-size: 16px;
 }
 
-.button{
-    background-color: whitesmoke;
+input {
+    background-color: #FDFBDA;
+    color: #2D4659;
+}
+
+.button {
+    background-color: #2D4659;
     border: none;
-    color: #5B913B;
+    color: #FDFBDA;
     padding: 3px;
     text-align: center;
     text-decoration: none;
@@ -75,23 +82,30 @@ label{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.button:hover{
-    background-color: #5B913B;
-    color: whitesmoke;
+.button:hover {
+    background-color: #819F7F;
+    color: #FDFBDA;
 }
 
-.button:active{
-    background-color: #5B913B;
+.button:active {
+    background-color: #819F7F;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
 footer{
-    background-color: #5B913B;
-    color: whitesmoke;
+    background-color: #2D4659;
+    color: #FDFBDA;
     text-align: center;
     padding: 2%;
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-decoration-line: none;
+}
+
+footer a {
+    color: #FDFBDA;
+    background-color: #2D4659;
+    text-decoration-line: none;
 }
