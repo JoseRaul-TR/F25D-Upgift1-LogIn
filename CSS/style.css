@@ -1,3 +1,4 @@
+/* General Style */
 * {
     background-color: #E5D0AC;
     color: #6D2323;
@@ -7,6 +8,7 @@
     font-family: sans-serif;
 }
 
+/* Navigation Style */
 ul {
     list-style-type: none;
     margin: 0;
@@ -31,7 +33,7 @@ li a {
     padding: 14px 16px;
     text-decoration-line: none;
 }
-
+ /* Container Style */
 .container {
     margin: 1%;
     padding: 2%;
@@ -42,6 +44,7 @@ h1 {
     margin: 2%;
 }
 
+/* Form Style */
 form {
     margin-top: 2%;
     margin-bottom: 2%;
@@ -68,6 +71,7 @@ input {
     color: #6D2323;
 }
 
+/* Button Style */
 .button {
     background-color: #FEF9E1;
     border: none;
@@ -93,6 +97,7 @@ input {
     transform: translateY(4px);
 }
 
+/* Footer Style */
 footer{
     background-color: #A31D1D;
     color: #FEF9E1;
