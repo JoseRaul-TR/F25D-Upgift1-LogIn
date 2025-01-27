@@ -53,6 +53,7 @@ form {
 table, tbody, th, tr, td {
     background-color: #A31D1D;
     color: #FEF9E1;
+    align-items: center;
     text-align: center;
     font-size: 15px;
     margin: auto;
@@ -101,12 +102,12 @@ input {
 footer{
     background-color: #A31D1D;
     color: #FEF9E1;
+    align-items: center;
     text-align: center;
     padding: 2%;
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-decoration-line: none;
 }
 
 footer a {
