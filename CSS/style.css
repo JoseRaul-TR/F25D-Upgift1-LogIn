@@ -1,118 +1,157 @@
-/* General Style */
-* {
-    background-color: #E5D0AC;
-    color: #6D2323;
-    margin: 0%;
-    padding: 0%;
-    border: 0px;
+body {
     font-family: sans-serif;
-}
-
-/* Links without underline */
-[href] {
-    text-decoration-line: none;
-}
-/* Navigation Style */
-ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #A31D1D;
-    color: #FEF9E1;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
 }
 
-li {
-    float: right;
-    color: #FEF9E1;
-    background-color: #A31D1D;
-
-}
-
-li a {
-    display:inline-table;
-    color: #FEF9E1;
-    background-color: #A31D1D;
-    text-align: right;
-    padding: 14px 16px;}
- /* Main Style */
-main {
-    margin: 1%;
-    padding: 2%;
-}
-
-h1 {
-    text-align: center;
-    margin: 2%;
-}
-
-/* Form Style */
-form {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-table, tbody, th, tr, td {
-    background-color: #A31D1D;
-    color: #FEF9E1;
-    align-items: center;
-    text-align: center;
-    font-size: 15px;
-    margin: auto;
-    width: 30%;
-    padding: 1%;
-}
-
-label {
-    background-color: #A31D1D;
-    color: #FEF9E1;
-    font-size: 16px;
-}
-
-input {
-    background-color: #FEF9E1;
-    color: #6D2323;
-}
-
-/* Button Style */
-.button {
-    background-color: #FEF9E1;
-    border: none;
-    color: #6D2323;
-    padding: 3px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 4px;
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.button:hover {
-    background-color: #fcdc3e;
-    color: #6D2323;
-}
-
-.button:active {
-    background-color: #3d1515;
-    box-shadow: 0 5px #805050;
-    transform: translateY(4px);
-}
-
-/* Footer Style */
-footer{
-    background-color: #A31D1D;
-    color: #FEF9E1;
-    align-items: center;
-    text-align: center;
-    padding: 2%;
-    position: fixed;
-    bottom: 0;
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "footer";
+    grid-template-columns: 1fr; /*Only one column layout */
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    height: 100vh;
     width: 100%;
 }
 
+header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: #f9f9f9;
+    padding: 0.5rem;
+    margin: 0px;
+    text-align: center; /* Center the header content */
+}
+
+header h2 {
+    margin: 0 1rem; /* Space between header items */
+}
+
+nav {
+    grid-area: navbar;
+    background-color: #4CAF50; /* Example background color */
+    color: #f9f9f9;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal navigation */
+    justify-content: right; /* Move to the right of the bar the navigation items */
+}
+
+nav li {
+    margin: 0 0.5rem; /* Space between navigation items */
+}
+
+nav a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: #000;
+    color: #f9f9f9;
+    min-height: 500px;
+}
+
+main h1 {
+    align-self:center;
+    margin-bottom: 20px;
+}
+
+.table-form {
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    width: 50%;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust form width as needed */
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.loginform th,
+.loginform td {
+    text-align: left;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.loginform th {
+    font-weight: bold;
+}
+
+.loginform tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: calc(100% - 12px); /* Full width with padding included */
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    color: #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #4CAF50;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 0.5rem;
+}
+
 footer a {
-    color: #FEF9E1;
-    background-color: #A31D1D;
+    color: #f9f9f9;
+    text-decoration: none;
 }
