@@ -25,28 +25,28 @@
         <!-- Main content -->
         <main>
             <h1>Välkomen till kundsidan</h1>
-                <table class="table-form"><!--table with log in form-->
-                    <form action="/login" method="POST">
-                        <tr>
-                            <th colspan="2">Logga in</th>
-                        </tr>
-                        <tr>
-                            <td><label for="email" >E-post:</label></td>
-                            <td><input type="email" id="email" name="email" required/></td>
-                        </tr>
-                        <tr>
-                            <td><label for="password">Lösenord:</label></td>
-                            <td><input type="password" id="password" name="password" required/></td>
-                        </tr>
-                        <tr>
-                            <td><button type="submit" class="button">Logga in</button></td>
-                            <td class="checkbox-c"><input type="checkbox" id="remember" name="remember"/><label for="remember">Kom ihåg mig</label></td>
-                        </tr>
+                <div class="form-container">
+                    <form>
+                        <div class="input-group">
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                        <label for="password">Lösenord:</label>
+                        <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="button-group">
+                        <button type="submit" class="button">Logga in</button>
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Kom ihåg mig</label>
+                        </div>
+                        </div>
                     </form>
-                    <tr>
-                        <td colspan="2" type="button" class="button">Registrera dig</button></td>
-                    </tr>
-                </table>
+                    <div class="input-group">
+                    <button type="button" class="button">Registrera dig</button>
+                    </div>
+                </div>
         </main>
         <!-- Footer -->
         <footer>
