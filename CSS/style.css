@@ -1,13 +1,17 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     width: 100vw;
     min-height: 100vh;
 }
 
+/* All links with the same style*/
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -15,10 +19,8 @@ body {
         "navbar"
         "main"
         "footer";
-    grid-template-columns: 1fr; /*Only one column layout */
-    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 3fr 1fr;
     height: 100vh;
-    width: 100%;
 }
 
 header {
@@ -36,7 +38,7 @@ header h2 {
 
 nav {
     grid-area: navbar;
-    background-color: #4CAF50; /* Example background color */
+    background-color: #4CAF50;
     color: #f9f9f9;
     padding: 0.5rem;
 }
@@ -51,11 +53,6 @@ nav ul {
 
 nav li {
     margin: 0 0.5rem; /* Space between navigation items */
-}
-
-nav a {
-    color: #f9f9f9;
-    text-decoration: none;
 }
 
 main {
@@ -73,6 +70,7 @@ main {
 main h1 {
     align-self:center;
     margin-bottom: 20px;
+    display: flex;
 }
 
 .table-form {
@@ -82,31 +80,23 @@ main h1 {
     width: 50%;
 }
 
-.loginform {
-    display: flex;
-    flex-direction: column;
-    width: 300px; /* Adjust form width as needed */
-    padding: 20px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+.table-form th {
+    text-align: center;
 }
 
-.loginform th,
-.loginform td {
-    text-align: left;
+.table-form td {
+    text-align: center;
     padding: 5px 0;
     margin-bottom: 20px;
 }
 
-.loginform th {
-    font-weight: bold;
+.checkbox-container {
+    display: flex;
+    align-items: center;
 }
 
-.loginform tr {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+.checkbox-container label {
+    margin-left: 5px;
 }
 
 .input-group {
@@ -154,4 +144,8 @@ footer {
 footer a {
     color: #f9f9f9;
     text-decoration: none;
+}
+
+i {
+    margin: 5px;
 }

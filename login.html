@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Kundsidan – Logga in</title>
 </head>
@@ -11,21 +12,21 @@
     <div class="grid-container">
         <!-- Header -->
         <header>
-            <h2>Företagets namn</h2>
+            <a href="index.html" target="_self"><h2>"Företagets namn"</h2></a>
         </header>
         <!-- Navbar-->
         <nav>
             <ul>
-                <li><a href="./index.html" target="_self">Hem</a></li>
-                <li><a href="./contact.html" target="_self">Kontakt</a></li>                    
-                <li><a href="./about.html" target="_self">Om oss</a></li>
+                <li><a href="contact.html" target="_self">Kontakt</a></li>                    
+                <li><a href="about.html" target="_self">Om oss</a></li>
+                <li><a href="login.html" target="_self">Logga in</a></li>
             </ul>
         </nav>
         <!-- Main content -->
         <main>
             <h1>Välkomen till kundsidan</h1>
                 <table class="table-form"><!--table with log in form-->
-                    <form class="loginform" action="/login" method="POST">
+                    <form action="/login" method="POST">
                         <tr>
                             <th colspan="2">Logga in</th>
                         </tr>
@@ -39,16 +40,24 @@
                         </tr>
                         <tr>
                             <td><button type="submit" class="button">Logga in</button></td>
-                            <td><input type="checkbox" id="remember" name="remember"/><label for="remember">Kom ihåg mig</label></td>
+                            <td class="checkbox-c"><input type="checkbox" id="remember" name="remember"/><label for="remember">Kom ihåg mig</label></td>
                         </tr>
                     </form>
                     <tr>
-                        <td colspan="2" button type="button" class="button">Registrera dig</button></td>
+                        <td colspan="2" type="button" class="button">Registrera dig</button></td>
                     </tr>
                 </table>
         </main>
         <!-- Footer -->
-        <footer>2025 – © José Raúl Tenza – F25D – <a href="https://www.boras.se/utbildningochforskola/yrkeshogskolaniboras.4.5b67f28d1584e5b72782a6f2.html" target="_blank">YH Borås</a></footer>
+        <footer>
+            <p>
+                2025 – © José Raúl Tenza
+                <br>
+                <a href="mailto:someone@example.com"><i class="fa-solid fa-at"></i></a><a href="https://www.linkedin.com/in/joseraultenza/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://github.com/JoseRaul-TR" target="_blank"><i class="fa-brands fa-github"></i> </a> 
+                <br>
+                F25D – <a href="https://www.boras.se/utbildningochforskola/yrkeshogskolaniboras.4.5b67f28d1584e5b72782a6f2.html" target="_blank">YH Borås</a>
+            </p>
+        </footer>
     </div>
 </body>
 
