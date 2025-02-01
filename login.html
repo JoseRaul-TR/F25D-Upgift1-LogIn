@@ -10,51 +10,51 @@
 
 <body>
     <div class="grid-container">
-        <!-- Header -->
-        <header>
+        <!-- Combined header and navbar -->
+        <div class="header-navbar">
             <a href="index.html" target="_self"><h2>"Företagets namn"</h2></a>
-        </header>
-        <!-- Navbar-->
-        <nav>
-            <ul>
-                <li><a href="contact.html" target="_self">Kontakt</a></li>                    
-                <li><a href="about.html" target="_self">Om oss</a></li>
-                <li><a href="login.html" target="_self">Logga in</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="contact.html" target="_self">Kontakt</a></li>
+                    <li><a href="about.html" target="_self">Om oss</a></li>
+                    <li><a href="login.html" target="_self">Logga in</a></li>
+                </ul>
+            </nav>
+        </div>
         <!-- Main content -->
         <main>
             <h1>Välkomen till kundsidan</h1>
+            <form>
                 <div class="form-container">
-                    <form>
-                        <div class="input-group">
+                    <div class="email-label">
                         <label for="email">E-post:</label>
+                    </div>
+                    <div class="email-input">
                         <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="input-group">
+                    </div>
+                    <div class="password-label">
                         <label for="password">Lösenord:</label>
+                    </div>
+                    <div class="password-input">
                         <input type="password" id="password" name="password" required>
-                        </div>
-                        <div class="button-group">
-                        <button type="submit" class="button">Logga in</button>
-                        <div class="checkbox-container">
+                    </div>
+                    <div class="login-button">
+                        <button type="submit" class="button">Logga in</button>                        </div>
+                    <div class="checkbox-container">
                             <input type="checkbox" id="remember" name="remember">
                             <label for="remember">Kom ihåg mig</label>
-                        </div>
-                        </div>
-                    </form>
-                    <div class="input-group">
-                    <button type="button" class="button">Registrera dig</button>
+                    </div>
+                    <div class="signin-button">
+                        <button type="button" class="register-button">Registrera dig</button>
                     </div>
                 </div>
+            </form>
         </main>
         <!-- Footer -->
         <footer>
             <p>
-                2025 – © José Raúl Tenza
-                <br>
-                <a href="mailto:someone@example.com"><i class="fa-solid fa-at"></i></a><a href="https://www.linkedin.com/in/joseraultenza/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://github.com/JoseRaul-TR" target="_blank"><i class="fa-brands fa-github"></i> </a> 
-                <br>
+                2025 – © José Raúl Tenza Ramírez<br>
+                <a href="mailto:someone@example.com"><i class="fa-solid fa-at"></i></a><a href="https://www.linkedin.com/in/joseraultenza/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://github.com/JoseRaul-TR" target="_blank"><i class="fa-brands fa-github"></i></a><br> 
                 F25D – <a href="https://www.boras.se/utbildningochforskola/yrkeshogskolaniboras.4.5b67f28d1584e5b72782a6f2.html" target="_blank">YH Borås</a>
             </p>
         </footer>

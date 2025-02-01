@@ -14,46 +14,40 @@ a {
     color: #f9f9f9;
     text-decoration: none;
 }
+
 .grid-container {
     display: grid;
     grid-template-areas:
-        "header"
-        "navbar"
-        "main"
-        "footer";
-    grid-template-rows: auto auto 1fr auto;
+        'header-navbar'
+        'main'
+        'footer';
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
 
-header {
-    grid-area: header;
+.header-navbar {
+    grid-area: header-navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     background-color: #4CAF50;
     color: #f9f9f9;
-    place-content: center;
-    text-align: center; /* Center the header content */
 }
 
-header h2 {
-    margin: 0 1rem; /* Space between header items */
+.header-navbar h2 {
+    margin: 0;
 }
 
-nav {
-    grid-area: navbar;
-    background-color: #4CAF50;
-    color: #f9f9f9;
-    place-content: center;
-}
-
-nav ul {
+.header-navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex; /* Horizontal navigation */
-    justify-content: right; /* Move to the right of the bar the navigation items */
 }
 
-nav li {
-    margin: 0 0.5rem; /* Space between navigation items */
+.header-navbar li {
+    margin: 0 10px; /* Space between navigation items */
 }
 
 main {
@@ -68,60 +62,86 @@ main {
 }
 
 main h1 {
-    align-self:center;
     text-align: center;
     margin-bottom: 20px;
-    display: flex;
 }
 
 .form-container {
-    width: 50%;
-    max-width: 500px; /* Ajusta el ancho máximo según tus necesidades */
+    max-width: 500px; /* Set a max-width for the log in form */
     padding: 20px;
     background-color: #333;
     border-radius: 8px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas */
-    grid-gap: 15px; /* Espacio entre filas y columnas */
+    grid-template-areas:
+    'email-label email-input'
+    'password-label password-input'
+    'login-button checkbox-container'
+    'signin-button signin-button';
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 10px;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.button-group {
+/* Style for all divs inside form-container */
+.form-container > div {
     display: flex;
     align-items: center;
-    gap: 10px;
-    grid-column: 1 / 3; /* Ocupa ambas columnas */
+    justify-content: center;
+    padding: 2.5px 0;
 }
 
-.form-container label {
-    margin-bottom: 5px;
+.form-container .email-label {
+    grid-area: email-label;
+    font-weight: bold;
+    text-align: right;
+    color: #f9f9f9;
 }
 
-.input-group {
-    margin-bottom: 15px;
+.form-container .email-input {
+    grid-area: email-input;
+    text-align: left;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
+.form-container .password-label {
+    grid-area: password-label;
+    font-weight: bold;
+    text-align: right;
+    color: #f9f9f9;
+}
+
+.form-container .password-input {
+    grid-area: password-input;
+    text-align: left;
+}
+
+.form-container .login-button {
+    grid-area: login-button;
+    text-align: right;
+}
+
+.form-container .checkbox-container {
+    grid-area: checkbox-container;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between checkbox and label*/
+}
+
+.form-container .signin-button {
+    grid-area: signin-button;
+    text-align: center;
 }
 
 .input-group input[type="email"],
 .input-group input[type="password"] {
-    width: calc(100% - 12px); /* Full width with padding included */
+    width: 100%;
     padding: 8px;
     background-color: #f9f9f9;
-    border: 1px solid #f9f9f9;
+    border: 1px solid #ccc;
     color: #000;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
-.button {
+.form-container .button {
     padding: 10px 15px;
     background-color: #4CAF50;
     color: #f9f9f9;
@@ -131,7 +151,23 @@ main h1 {
     text-align: center;
 }
 
-.button:hover {
+.form-container .button:hover {
+    background-color: #45a049;
+}
+
+.form-container .signin-button .register-button {
+    background-color: #4CAF50;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 75%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.form-container .signin-button .register-button:hover {
     background-color: #45a049;
 }
 
@@ -141,11 +177,6 @@ footer {
     color: #f9f9f9;
     text-align: center;
     place-content: center;
-}
-
-footer a {
-    color: #f9f9f9;
-    text-decoration: none;
 }
 
 i {
