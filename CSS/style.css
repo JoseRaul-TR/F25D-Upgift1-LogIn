@@ -178,8 +178,11 @@ footer {
     color: #f9f9f9;
     text-align: center;
     place-content: center;
+    padding: 10px;
 }
 
 i {
     margin: 5px;
 }
+
+/* Göra media responsive */
