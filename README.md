@@ -35,11 +35,11 @@ No server-side setup is required for viewing the static HTML and CSS.
 The project structure would be as follows:
 
 ├── index.html        (Likely the homepage, referenced in the header)
-├── login.html        (The current login page – * only html file existing at the moment *)
+├── login.html        (The current login page)
 ├── contact.html      (Link in the navigation)
 ├── about.html        (Link in the navigation)
 └── Styles/
-└── style.css     (The main CSS file)
+    └── style.css     (The main CSS file)
 
 The `login.html` file contains the HTML structure, and `/Styles/style.css` contains the styling.
 
