@@ -26,8 +26,8 @@ This project is a basic login page with fields for email and password. It also i
 
 ## Screenshot
 
-*(Please replace this with a screenshot of your login page.)*
-![Login Page Screenshot](./Assets/Images/Project-1.png)
+![Project-1](https://github.com/user-attachments/assets/4b432045-f3e0-4c71-9e17-5cebfc4fb060)
+
 
 ## Technologies Used
 
@@ -50,9 +50,6 @@ To view this login page locally:
 
 ## Project Structure
 .
-├── Assets/
-│   └── Images/
-│       └── Project-1.png (Example screenshot)
 ├── Styles/
 │   └── style.css
 └── login.html
