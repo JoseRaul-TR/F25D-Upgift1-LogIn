@@ -49,10 +49,13 @@ To view this login page locally:
 3.  Open the `login.html` file in your web browser.
 
 ## Project Structure
+
+```
 .
 ├── Styles/
 │   └── style.css
 └── login.html
+```
 
 ## Contact
 
