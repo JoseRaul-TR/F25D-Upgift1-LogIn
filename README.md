@@ -56,8 +56,8 @@ To view this login page locally:
 
 ## Contact
 
--   **LinkedIn:** [Your LinkedIn Profile URL](https://www.linkedin.com/in/joseraultenza/)
--   **GitHub:** [Your GitHub Profile URL](https://github.com/JoseRaul-TR)
+-   **LinkedIn:** (https://www.linkedin.com/in/joseraultenza/)
+-   **GitHub:** (https://github.com/JoseRaul-TR)
 
 ---
 
